@@ -1,0 +1,23 @@
+@import '../App.scss';
+.dropdown{
+    background-color: $GRAY6;
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+    display: inline-block;
+    box-shadow: 2px 2px 16px -9px rgba(0,0,0,0.50),
+    -2px -2px 16px -9px rgba(0,0,0,0.50);
+    border: $qborderBlack;
+    min-height: 30px ;
+    height: auto;
+    &_content{
+        & > *{
+            padding: 0.8rem;
+            border-bottom: $qborderBlack;
+        }
+        & > *:hover{
+            background-color: $GRAY4;
+
+        }
+    }
+}

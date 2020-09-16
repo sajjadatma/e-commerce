@@ -1,0 +1,73 @@
+@import "../../../App.scss";
+.shoppingCart {
+  width: 100%;
+  height: 100%;
+  &__header {
+    width: 100%;
+    height: 60px;
+    background-color: $GRAY6;
+    @include FlexCenter;
+  }
+  &__content {
+    width: 100%;
+    .product__items {
+      &:hover {
+        width: 100%;
+        background-color: $GRAY5;
+        transform: scale(1.01);
+        transition: all 0.2s linear;
+      }
+      &:not(:hover) {
+        background-color: white;
+        transition: all 0.2s linear;
+      }
+      cursor: pointer;
+      padding: 5px;
+      border-top: $qborderBlack;
+      width: 100%;
+      height: 130px;
+            display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .product__items:last-child {
+      border-bottom: $qborderBlack;
+    }
+  }
+  &__total {
+    margin: auto;
+    height: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > * {
+      display: flex;
+      align-items: center;
+    }
+    & > :first-child {
+        // background-color: $RED2 !important;
+      }
+    .total__values {
+        display: flex;
+        &>:nth-child(3){
+            margin: 0 10px;
+            svg{
+                margin: 0 5px;
+            }
+        }
+        &>:nth-child(3) span{
+            font-size: 16px !important;
+        }
+      span:nth-of-type(1) {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0 5px;
+      }
+      span:nth-of-type(2) {
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}

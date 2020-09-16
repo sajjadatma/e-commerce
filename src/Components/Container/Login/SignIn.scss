@@ -1,0 +1,29 @@
+@import '../../../App.scss';
+.signIn {
+  text-align: center;
+  display: flex;
+  padding: 1rem;
+  border-right: $qborderBlack;
+  flex-direction: column;
+  &__error{
+    margin-top: 1rem;
+  }
+  &__inputs {
+    width: 50%;
+    justify-content: center;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    * {
+      margin: 0.5rem;
+    }
+  }
+  &__button > button{
+    margin: 10px;
+  height: 45px;
+  font-weight: bold;
+  svg{
+      margin: 0 0.2rem;
+  }
+}
+}

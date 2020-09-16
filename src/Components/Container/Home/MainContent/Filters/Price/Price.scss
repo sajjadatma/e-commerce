@@ -1,0 +1,30 @@
+@import '../../../../../../App.scss';
+
+.price{
+    position: relative;
+    top: 0;
+    margin: 20px 0;
+    padding: 0 2rem;
+    background-color: $GRAY6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__value{
+        display: flex;
+        width: 100%;
+        margin: 0.5rem;
+        justify-content: space-around;
+        span{
+            width: 40%;
+            margin: 0 3px;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #8d8d8d42;
+            background-color: white;
+            border-radius: 40px 40px 40px 40px;
+            padding: 0.3rem;
+            color: #a5a5a5;
+        }
+    }
+}

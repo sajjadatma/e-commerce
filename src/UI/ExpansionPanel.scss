@@ -1,0 +1,49 @@
+@import '../App.scss';
+.ExpansionPanel {
+  overflow: hidden;
+  border-bottom: $qborderBlack;
+  &__headers {
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    & > :nth-child(2) {
+      height: 100%;
+      padding-left: 1rem;
+      letter-spacing: 2px;
+    }
+  }
+  &__headers:hover {
+    cursor: pointer;
+    color: $MAINBLUE;
+  }
+}
+.maxizeItem{
+  height: auto;
+}
+
+.anim1{
+  animation: max 1s;
+}
+@keyframes max {
+  from {
+    height: 0px;
+  }
+  to{
+    height: auto;
+  }
+}
+.minimizeItem{
+  height: 60px;
+}
+.anim2{
+  animation: min 1s;
+}
+
+@keyframes min {
+  from {
+    height: auto;
+  }
+  to{
+    height: 0;
+  }
+}

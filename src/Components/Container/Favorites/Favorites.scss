@@ -1,0 +1,18 @@
+@import '../../../App.scss';
+
+.favorites{
+    height: 100%;
+    width: 100%;
+    &__header{
+        width: 100%;
+        height: 60px;
+        background-color: $GRAY6;
+        border: $qborderBlack;
+        @include FlexCenter;
+    }
+    &__products {
+        margin:  auto;
+        cursor: pointer;
+        position: relative;
+    }
+}

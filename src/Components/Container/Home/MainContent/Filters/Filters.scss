@@ -1,0 +1,20 @@
+@import '../../../../../App.scss';
+
+.filters{
+    height: auto;
+    width: 25%;
+    border-right: $qborderBlack;
+    & > *{
+        width: 100%;
+        overflow: hidden;
+    }
+    &__brands{
+        height: 20%;
+    }
+    &__colors{
+        height: 10%;
+    }
+    &__sizes{
+        height: 20%;
+    }
+}

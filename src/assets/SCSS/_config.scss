@@ -1,0 +1,61 @@
+// COLORS
+//COLORS ---> GRAY
+$GRAY1: #595959;
+$GRAY2: #7f7f7f;
+$GRAY3: #a5a5a5;
+$GRAY4: #cccccc;
+$GRAY5: #dcdcdd;
+$GRAY6: #f2f2f2;
+//COLORS ---> BLUE:
+$BLUE1: #1d3557;
+$BLUE2: #05668d;
+$BLUE3: #028090;
+$BLUE4: #8e9aaf;
+$BLUE5: #a8dadc;
+$MAINBLUE: #3853d8;
+
+//COLORS ---> RED:
+$RED1: #a51c30;
+$RED2: #d90429;
+$RED3: #ff0000;
+$RED4: #ff1654;
+$RED5: #ef233c;
+
+//COLORS ---> GREEN
+$GREEN1: #008108;
+$GREEN2: #38a700;
+$GREEN3: #329900;
+$GREEN4: #00db0e;
+$GREEN5: #7ac74f;
+
+//-----------------------------------------------------------------------
+
+// border
+$qborder: 1px solid #dcdcdd42;
+$qborderBlack: 1px solid #8d8d8d42;
+
+@mixin cBorder($size, $color) {
+  border-style: solid;
+  border-width: $size;
+  border-color: $color;
+}
+
+//-----------------------------------------------------------------------
+//box shadow
+@mixin cBoxShadow($x,$y,$blur,$spr) {
+ box-shadow: $x $y $blur $spr rgba(128, 128, 128, 0.5);
+}
+$BoxShadow: 0px 9px 16px -9px rgba(0,0,0,0.50);
+
+//-----------------------------------------------------------------------
+
+@mixin FlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ @mixin FlexCustom($justify,$align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+ }

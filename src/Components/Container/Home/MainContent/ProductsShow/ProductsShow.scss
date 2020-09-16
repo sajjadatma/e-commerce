@@ -1,0 +1,19 @@
+@import "../../../../../App.scss";
+.products__paginate{
+  width: 75%;
+  height: auto;
+  .products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .paginate{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+}

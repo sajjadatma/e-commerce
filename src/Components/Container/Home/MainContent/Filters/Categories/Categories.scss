@@ -1,0 +1,48 @@
+@import '../../../../../../App.scss';
+
+.categories{
+    overflow: hidden;
+    &__headers{
+        display: flex;
+        align-items: center;
+        & > :nth-child(2){
+            padding-left: 1rem;
+            letter-spacing: 2px;        }
+    }
+    &__headers:hover{
+        cursor: pointer;
+        color:$MAINBLUE;
+     
+    }
+    &__list{
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 2rem;
+        li{
+            margin: 0.4rem 0;
+        }
+        li:hover{
+            position: relative;
+            left: 5px;
+            cursor: pointer;
+            animation: MoveLeft 0.3s;
+            transition: color 0.3s;
+            color:$MAINBLUE;
+        }
+    }
+
+}
+
+@keyframes MoveLeft{
+    from{
+        left:0
+    }to{
+        left: 5px;
+    }
+}
+li:disabled,
+li[disabled]{
+text-decoration: line-through;
+  color: #666666;
+  pointer-events: none;
+}
